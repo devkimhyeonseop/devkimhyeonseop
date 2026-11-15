@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>김현섭 | devkimhyeonseop</title>
+<meta name="description" content="배우면서 직접 만들고, 기록으로 성장하는 개발자 김현섭의 소개 페이지">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root{
+    --bg:#0b1220; --bg2:#111a2e; --card:#141f36; --line:#22304d;
+    --text:#e8eefc; --muted:#9fb0d0; --accent:#60a5fa; --accent2:#38bdf8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:Pretendard,-apple-system,"Segoe UI","Noto Sans KR",sans-serif;background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased;word-break:keep-all}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:960px;margin:0 auto;padding:0 24px}
+
+  nav{position:sticky;top:0;z-index:10;background:rgba(11,18,32,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;justify-content:space-between;align-items:center;height:60px}
+  .logo{font-weight:800;letter-spacing:-.02em}
+  .logo span{color:var(--accent)}
+  nav ul{display:flex;gap:22px;list-style:none;font-size:15px;color:var(--muted)}
+  nav ul a:hover{color:var(--text)}
+
+  .hero{padding:110px 0 90px;position:relative;overflow:hidden}
+  .hero::before{content:"";position:absolute;inset:-40% -20% auto auto;width:640px;height:640px;background:radial-gradient(circle,rgba(56,189,248,.22),transparent 65%);pointer-events:none}
+  .badge{display:inline-block;padding:6px 14px;border:1px solid var(--line);border-radius:999px;color:var(--accent);font-size:14px;margin-bottom:26px;background:var(--bg2)}
+  h1{font-size:clamp(38px,7vw,68px);line-height:1.15;letter-spacing:-.03em;font-weight:800}
+  h1 em{font-style:normal;background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p{margin-top:24px;font-size:clamp(17px,2.4vw,21px);color:var(--muted);max-width:620px}
+  .cta{margin-top:38px;display:flex;gap:12px;flex-wrap:wrap}
+  .btn{padding:14px 26px;border-radius:12px;font-weight:700;font-size:16px;transition:transform .15s,background .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#06101f}
+  .btn.ghost{border:1px solid var(--line);background:var(--bg2)}
+
+  section{padding:80px 0;border-top:1px solid var(--line)}
+  .label{color:var(--accent);font-weight:700;font-size:14px;letter-spacing:.08em;text-transform:uppercase}
+  h2{font-size:clamp(28px,4.5vw,40px);margin:8px 0 18px;letter-spacing:-.02em}
+  .lead{color:var(--muted);font-size:18px;max-width:680px}
+
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:36px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px;transition:transform .2s,border-color .2s}
+  .card:hover{transform:translateY(-4px);border-color:var(--accent)}
+  .card .ico{font-size:30px;margin-bottom:14px}
+  .card h3{font-size:20px;margin-bottom:6px}
+  .card p{color:var(--muted);font-size:16px}
+  .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .tags span{padding:4px 12px;border-radius:999px;background:var(--bg2);border:1px solid var(--line);font-size:14px;color:var(--accent)}
+
+  .til{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;background:linear-gradient(135deg,#13234a,#0f1a33);border:1px solid var(--line);border-radius:22px;padding:40px;margin-top:34px}
+  .til h3{font-size:24px}
+  .til p{color:var(--muted);margin-top:6px}
+
+  footer{border-top:1px solid var(--line);padding:36px 0;text-align:center;color:var(--muted);font-size:14px}
+  @media(max-width:640px){nav ul{gap:14px;font-size:14px}.hero{padding:70px 0 60px}section{padding:60px 0}.til{padding:28px}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top">dev<span>kim</span></a>
+    <ul>
+      <li><a href="#about">소개</a></li>
+      <li><a href="#learning">학습</a></li>
+      <li><a href="#til">기록</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <span class="badge">📚 매일 학습을 기록하는 개발자</span>
+    <h1>배우면서 직접 만들고,<br><em>기록으로 성장</em>합니다.</h1>
+    <p>안녕하세요, 김현섭입니다. 꾸준함을 가장 큰 무기로 삼고, 매일 배운 것을 기록하며 개발자로 성장하고 있습니다.</p>
+    <div class="cta">
+      <a class="btn primary" href="https://github.com/devkimhyeonseop/TILWithClaude" target="_blank" rel="noopener">TIL 보러가기</a>
+      <a class="btn ghost" href="https://github.com/devkimhyeonseop" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="label">About</div>
+    <h2>소개</h2>
+    <p class="lead">C#/C++를 공부하고, 네트워크·리눅스 인프라 기반도 함께 쌓고 있습니다. 매일 학습한 내용을 기록하며 꾸준히 성장하고 있습니다.</p>
+  </div>
+</section>
+
+<section id="learning">
+  <div class="wrap">
+    <div class="label">Learning</div>
+    <h2>학습 중인 분야</h2>
+    <div class="grid">
+      <div class="card">
+        <div class="ico">💻</div>
+        <h3>Programming</h3>
+        <p>프로그래밍 언어의 기본기를 탄탄히 다지고 있습니다.</p>
+        <div class="tags"><span>C#</span><span>C++</span></div>
+      </div>
+      <div class="card">
+        <div class="ico">🌐</div>
+        <h3>Infra &amp; Network</h3>
+        <p>서비스가 동작하는 기반을 이해하기 위해 공부합니다.</p>
+        <div class="tags"><span>Linux</span><span>네트워크</span><span>클라우드</span></div>
+      </div>
+      <div class="card">
+        <div class="ico">🛠️</div>
+        <h3>Tools</h3>
+        <p>버전 관리와 협업의 기본 도구를 사용합니다.</p>
+        <div class="tags"><span>Git</span><span>GitHub</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="til">
+  <div class="wrap">
+    <div class="label">Daily Learning</div>
+    <h2>기록</h2>
+    <p class="lead">배운 내용은 그날 바로 정리해서 올립니다.</p>
+    <div class="til">
+      <div>
+        <h3>TILWithClaude</h3>
+        <p>Today I Learned — 매일의 학습 기록</p>
+      </div>
+      <a class="btn primary" href="https://github.com/devkimhyeonseop/TILWithClaude" target="_blank" rel="noopener">바로가기 →</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">© 2026 김현섭 · devkimhyeonseop</div>
+</footer>
+
+</body>
+</html>
