@@ -11,13 +11,6 @@ C#/C++와 Python으로 직접 만들어 보며 배우고, 네트워크·리눅�
 - **Infra / Network**: Linux (RHCSA 준비), Cisco 네트워킹 (CCNA 준비), Azure
 - **Tools**: Git, GitHub
 
-## Certifications (In Progress)
-
-- CCNA
-- RHCSA
-- Microsoft Azure
-- 네트워크관리사 2급
-
 ## Daily Learning
 
 매일 학습한 내용을 [TILWithClaude](https://github.com/devkimhyeonseop/TILWithClaude)에 기록합니다.
